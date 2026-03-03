@@ -30,6 +30,9 @@ android {
             )
         }
     }
+    buildFeatures {
+        viewBinding = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -53,4 +56,6 @@ dependencies {
     implementation("androidx.room:room-runtime:$room_version")
     implementation("androidx.room:room-ktx:$room_version") // Para usar Corrutinas
     kapt("androidx.room:room-compiler:$room_version")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 }
