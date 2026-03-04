@@ -19,7 +19,7 @@ class TechRepository(
     }
 
     // --- Operaciones de Equipos ---
-    fun obtenerEquiposPorLab(labId: Int): Flow<List<Equipo>> {
+    fun obtenerEquiposPorLaboratorio(labId: Int): Flow<List<Equipo>> {
         return equipoDao.obtenerEquiposPorLaboratorio(labId)
     }
 

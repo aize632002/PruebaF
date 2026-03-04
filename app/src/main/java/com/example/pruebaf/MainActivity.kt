@@ -7,10 +7,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.launch
-
 // Importamos el ViewBinding que acabamos de activar
 import com.example.pruebaf.databinding.ActivityMainBinding
-
 // Tus clases de Room y MVVM
 import data.local.entity.AppDatabase
 import repository.TechRepository
@@ -25,7 +23,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         // Inflamos la vista correctamente
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)

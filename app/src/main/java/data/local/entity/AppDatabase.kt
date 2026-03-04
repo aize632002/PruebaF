@@ -9,7 +9,7 @@ import data.local.entity.Equipo
 import data.local.entity.dao.LaboratorioDao
 import data.local.entity.dao.EquipoDao
 
-@Database(entities = [Laboratorio::class], version = 1, exportSchema = false)
+@Database(entities = [Laboratorio::class, Equipo::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun laboratorioDao(): LaboratorioDao

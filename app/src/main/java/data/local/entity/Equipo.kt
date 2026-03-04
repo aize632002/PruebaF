@@ -4,8 +4,7 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
-@Entity(
-    tableName = "equipos",
+@Entity( tableName = "equipos",
     foreignKeys = [
         ForeignKey(
             entity = Laboratorio::class,
@@ -16,8 +15,10 @@ import androidx.room.PrimaryKey
     ]
 )
 
+
 data class Equipo(
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int,
     val nombre: String,
     val estado: String, // Puedes usar String por ahora ("Operativo", "Dañado", "Pendiente")
     val laboratorioId: Int
